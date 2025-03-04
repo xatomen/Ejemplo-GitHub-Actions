@@ -1,0 +1,16 @@
+# Nombre del workflow
+name: Hello World con YAML
+# Evento que dispara el workflow
+on:
+    workflow_dispatch:
+# Trabajos que se ejecutarán
+jobs:
+    # Trabajo que se ejecutará
+    hello-world-job:
+        # Tipo de sistema operativo
+        runs-on: ubuntu-latest
+        # Pasos que se ejecutarán
+        steps:
+        # Paso que se ejecutará
+        - name: Hello world action
+          run: echo "Hello world!"
